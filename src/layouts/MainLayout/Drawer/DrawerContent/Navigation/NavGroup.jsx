@@ -31,11 +31,11 @@ export default function NavGroup({ item }) {
       subheader={
         <Typography component="div" sx={(theme) => ({ ...theme.typography.menuCaption, color: 'primary.main' })} gutterBottom>
           {item.title}
-          {item.caption && (
+          {/* {item.caption && (
             <Typography component="div" sx={(theme) => ({ ...theme.typography.subMenuCaption, color: 'text.primary' })} gutterBottom>
               {item.caption}
             </Typography>
-          )}
+          )} */}
         </Typography>
       }
     >
