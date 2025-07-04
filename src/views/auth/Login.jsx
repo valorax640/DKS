@@ -8,7 +8,7 @@ export default function Login() {
   return (
     <CommonAuthLayout
       title="Sign in"
-      subHeading="To keep connected with us."
+      subHeading="Already have an account?"
       footerLink={{ title: 'Create a new account', link: '/register' }}
     >
       {/* Login form */}

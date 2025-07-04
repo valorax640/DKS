@@ -15,11 +15,11 @@ import { DRAWER_WIDTH } from 'config';
 import { handlerDrawerOpen, useGetMenuMaster } from 'states/menu';
 
 // assets
-import logo from 'assets/images/logo.svg';
+import logo from 'assets/images/logo-dks.png';
 import MenuTwoToneIcon from '@mui/icons-material/MenuTwoTone';
 
 // AppBar props, including styles that vary based on drawer state and screen size
-const appBar = { color: 'primary', position: 'fixed', sx: { width: 1, zIndex: { xs: 1100, lg: 1201 } } };
+const appBar = {  position: 'fixed', sx: { background:'linear-gradient(to right, rgba(14, 26, 116, 1) 0%, rgba(188, 5, 5, 1) 50%, rgba(80, 17, 62, 1) 100%)' ,width: 1, zIndex: { xs: 1100, lg: 1201 } } };
 
 // ==============================|| MAIN LAYOUT - HEADER ||============================== //
 
@@ -44,8 +44,8 @@ export default function Header() {
       </Stack>
       <Box sx={{ flexGrow: 1 }} />
       <Stack direction="row" sx={{ alignItems: 'center', gap: { xs: 0.5, sm: 1 } }}>
-        <Search />
-        <Notification />
+        {/* <Search /> */}
+        {/* <Notification /> */}
         <Profile />
       </Stack>
     </Toolbar>

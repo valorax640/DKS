@@ -42,10 +42,10 @@ export default function AuthLogin({ inputSx }) {
           <TextField
             id="outlined-basic"
             variant="outlined"
-            {...register('email', emailSchema)}
+            {...register('email', emailSchema)} 
             placeholder="example@materially.com"
             fullWidth
-            label="Email Address / Username"
+            label="Username"
             error={Boolean(errors.email)}
             sx={inputSx}
           />
@@ -89,7 +89,7 @@ export default function AuthLogin({ inputSx }) {
         </Box>
       </Stack>
 
-      <Button type="submit" variant="contained" fullWidth sx={{ minWidth: 120, mt: { xs: 2, sm: 3 }, '& .MuiButton-endIcon': { ml: 1 } }}>
+      <Button type="submit" variant="contained" fullWidth sx={{ background:'linear-gradient(to right, rgba(14, 26, 116, 1) 0%, rgba(188, 5, 5, 1) 50%, rgba(80, 17, 62, 1) 100%)' , minWidth: 120, mt: { xs: 2, sm: 3 }, '& .MuiButton-endIcon': { ml: 1 } }}>
         Sign In
       </Button>
     </form>

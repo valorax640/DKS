@@ -12,7 +12,7 @@ import Box from '@mui/material/Box';
 import MainCard from 'components/cards/MainCard';
 
 // assets
-import Logo from 'assets/images/logo-dark.svg';
+import Logo from 'assets/images/logo-dks.png';
 
 // ==============================|| COMMON AUTH LAYOUT ||============================== //
 
@@ -40,22 +40,24 @@ export default function CommonAuthLayout({ title, subHeading, footerLink, childr
                 <Typography color="text.primary" gutterBottom variant="h2">
                   {title}
                 </Typography>
-                <Typography variant="body2" color="text.secondary">
+                <Typography variant="body2" color="text.secondary" fontSize={13}>
                   {subHeading}
                 </Typography>
               </Box>
               <Link to="/">
-                <CardMedia component="img" image={Logo} alt="logo" />
+                <Box sx={{borderRadius:10 , p:2 , background:'linear-gradient(to right, rgba(14, 26, 116, 1) 0%, rgba(188, 5, 5, 1) 50%, rgba(80, 17, 62, 1) 100%)'}}>
+                  <CardMedia component="img" sx={{ width: 150, height: 'auto' }} image={Logo} alt="logo" />
+                </Box>
               </Link>
             </Stack>
 
             {children}
           </Stack>
-          {footerLink && (
+          {/* {footerLink && (
             <Typography variant="subtitle2" color="text.secondary" component={Link} to={footerLink.link} sx={{ textDecoration: 'none' }}>
               {footerLink.title}
             </Typography>
-          )}
+          )} */}
         </MainCard>
       </Grid>
     </Grid>
